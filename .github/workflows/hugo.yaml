@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # 如果你用了主题子模块
+          submodules: recursive  # 如果用了主题子模块
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

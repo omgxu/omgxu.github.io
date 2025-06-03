@@ -1,6 +1,5 @@
 baseURL = "http://localhost:1313/"
-languageCode = "en"
-defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+# defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Jinhao Xu's Website"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
@@ -49,6 +48,62 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    defaultContentLanguage = "en"
+    contentDir = "content/english"
+    # defaultContentLanguageInSubdir = false  # 貌似不影响
+    weight = 1
+    [[languages.en.menu.main]]
+      name = "Home"
+      weight = 10
+      identifier = "home"
+      url = "/"
+    [[languages.en.menu.main]]
+      name = "Archives"
+      weight = 20
+      identifier = "archives"
+      url = "/post/"
+    [[languages.en.menu.main]]
+      name = "Tags"
+      weight = 30
+      identifier = "tags"
+      url = "/tags/"
+    [[languages.en.menu.main]]
+      name = "Categories"
+      weight = 40
+      identifier = "categories"
+      url = "/categories/"
+  [languages.zh-cn]
+    languageName = "简体中文"
+    languageCode = "zh-CN"
+    defaultContentLanguage = "zh"
+    contentDir = "content/chinese"
+    # defaultContentLanguageInSubdir = false
+    weight = 2
+    [[languages.zh-cn.menu.main]]
+      name = "首页"
+      weight = 10
+      identifier = "home"
+      url = "/zh-cn/"
+    [[languages.zh-cn.menu.main]]
+      name = "归档"
+      weight = 20
+      identifier = "archives"
+      url = "/zh-cn/post/"
+    [[languages.zh-cn.menu.main]]
+      name = "标签"
+      weight = 30
+      identifier = "tags"
+      url = "/zh-cn/tags/"
+    [[languages.zh-cn.menu.main]]
+      name = "分类"
+      weight = 40
+      identifier = "categories"
+      url = "/zh-cn/categories/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
@@ -113,7 +168,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   uglyURLs = false          # please keep same with uglyurls setting
 
   # Show language selector for multilingual site.
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = true

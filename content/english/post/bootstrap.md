@@ -2,7 +2,7 @@
 title: "Compiler bootstrapping: philosophical metaphors in technology"
 date: 2025-06-04T21:46:43+08:00
 lastmod: 2025-06-04T21:46:43+08:00
-draft: true
+draft: false
 keywords: [compiler, bootstrap, philosophy]
 description: ""
 tags: [compiler, bootstrap, philosophy]

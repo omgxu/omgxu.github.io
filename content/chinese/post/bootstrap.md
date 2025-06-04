@@ -2,7 +2,7 @@
 title: "编译器的自举：技术中的哲学隐喻"
 date: 2025-06-04T19:18:49+08:00
 lastmod: 2025-06-04T19:18:49+08:00
-draft: true
+draft: false
 keywords: [编译器, 自举, 哲学]
 description: ""
 tags: [编译器, 自举, 哲学]
